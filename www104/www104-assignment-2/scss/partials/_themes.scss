@@ -1,0 +1,45 @@
+// THEME MAPS
+
+$theme-1: (
+    'primary': darken(#C50E0E, 5%),
+    'secondary': #FED201,
+    'accent': #2A1D67,
+    'light': #BDBDBD,
+    'medium' : #7B7B7B,
+    'dark' : #444444,
+    'white' : #fff,
+    'black' : #000,
+);
+
+$theme-2: (
+    'primary': #2A1D67,
+    'secondary': #E6480A,
+    'accent': #EE7601,
+    'light': #FBD9BA,
+    'medium' : #B7E0F7,
+    'dark' : #444444,
+    'white' : #fff,
+    'black' : #000,
+);
+
+$theme-3: (
+    'primary': #0271B9,
+    'secondary': #EE7601,
+    'accent': #FED201,
+    'light': #DCDCDC,
+    'medium' : #A6C207,
+    'dark' : #7B7B7B,
+    'white' : #fff,
+    'black' : #000,
+);
+
+/* THEME SWITCH */
+
+/*
+* To switch between themes change $active-theme to one of the following themes:
+* $theme-1
+* $theme-2
+* $theme-3
+*/
+
+$active-theme : $theme-3; // CHANGE THEME HERE

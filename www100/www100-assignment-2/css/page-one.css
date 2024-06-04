@@ -1,0 +1,258 @@
+/* Web Fonts */
+/* font-family: 'Bebas Neue', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #1e1e1e;
+    font-size: calc(0.0625rem * 16);
+}
+
+.wrapper {
+    margin: 4rem;
+    max-width: 100%;
+    line-height: 1.65;
+}
+
+p {
+    margin: 1.5rem 0;
+}
+
+header {
+    margin: 0;
+    width: 100vw;
+    padding: 5rem;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    color: #fff;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+}
+
+h3 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #1e1e1e;
+    border-color: rgb(182, 98, 112);
+}
+
+#static, #relative, #absolute, #fixed, #sticky {
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 1.75;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.version1, .version2 {
+    padding: 1rem 2rem;
+    background-color: rgb(132, 36, 52);
+    border-left: 0.125rem solid #1e1e1e;
+    border-right: 0.125rem solid #1e1e1e;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.55rem;
+}
+
+.version1:hover {
+    background-color: rgb(166, 65, 82);
+}
+
+.version2:hover {
+    background-color: rgb(166, 65, 82);
+}
+
+/* INTRO */
+
+.intro {
+    border: 0.125rem dashed rgb(182, 98, 112);
+    padding: 1rem 3rem;
+    margin-bottom: 3rem;
+}
+
+code {
+    background-color: rgb(236, 236, 236);
+    border-radius: 0.095rem;
+    padding: 0.225rem;
+    letter-spacing: 0.0325rem;
+    font-size: calc(0.0625rem * 14);
+}
+
+/* SECONDARY NAV BAR */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.navbar {
+    flex-basis: 12rem;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 1rem 2rem 2rem 2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+    height: 35rem;
+}
+
+.not-navbar {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 50%;
+}
+
+.navbar h3 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.position {
+    list-style-type: none;
+    color: #fff;
+    padding: 1rem;
+    margin-left: -3rem;
+}
+
+.position a {
+    color: #fff;
+    padding: 1rem;
+}
+
+.position a:hover {
+    background-color: rgb(132, 36, 52);
+    padding: 1rem;
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
+}
+
+/* Image examples */
+
+img {
+    width: 80vh;
+    height: auto;
+    border-radius: 0.625rem;
+    border: 0.625rem solid #1e1e1e;
+    margin: 1rem auto;
+}
+
+/* PRETAG FORMATTING */
+
+pre {
+    background-color: #1e1e1e;
+    line-height: 1.5rem;
+    width: 36.5rem;
+    margin: 2rem 0;
+    padding: 2.5rem 1rem;
+    border-radius: 0.625rem;
+    color: #fff;
+    font-size: calc(0.0625rem * 14);
+}
+
+.selector {
+    color: #fff;
+}
+
+.property {
+    color: #bda5e6;
+}
+
+.punctuation {
+    color: #929292;
+}
+
+.comment {
+    color:rgb(212, 143, 154)
+}
+
+
+/* POP QUIZ */
+
+.pop-quiz {
+    border: 2px dashed rgb(182, 98, 112);
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.question {
+    font-size: 1.25rem;
+}
+
+.reveal {
+    display: inline;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 1rem;
+    width: max-content;
+    border-radius: 1rem;
+}
+
+.answer-1 {
+    display: none;
+}
+
+.answer-2 {
+    display: none;
+}
+
+.reveal:hover > .answer-1 {
+    display: inline;
+    margin-top: 1rem;
+    color: #bda5e6;
+    border: 0.0625rem dashed #bda5e6;
+    padding: 0.625rem;
+    margin-left: 1rem;
+    width: max-content;
+    border-radius: 1rem;
+}
+
+.conclusion {
+    border: none;
+}
+
+hr {
+    border-top: none;
+    border-bottom: 0.125rem solid rgb(182, 98, 112);
+}
+
+footer {
+    margin: 0;
+    width: 100vw;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+}

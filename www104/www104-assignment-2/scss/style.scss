@@ -1,0 +1,260 @@
+/* CSS validated, no errors found */
+
+@import './partials/normalize';
+@import './partials/mixins';
+@import './partials/themes';
+@import './partials/variables';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: $body-font;
+    font-weight: $normal;
+    font-size: $body-font-size;
+
+    #intro, #origin, #timeline, #team, #contact {
+        scroll-margin-top: 7rem; // so that anchor links land at the right place
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        background-color: map-get($active-theme, 'primary');
+        width: 100vw;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        
+        .logo {
+            max-width: 10vw;
+            @if $active-theme != $theme-1 {
+                filter:brightness(100); // changes logo contrast again header background color
+            } @else {
+                filter: none;
+            }
+        }
+    
+        // nav list-style-type: none; reset-list in _mixins.scss
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+            font-weight: $medium;
+    
+            li a {
+                padding: 1rem;
+                border-radius: 2rem;
+                color: map-get($active-theme, 'white');
+                // text-decoration: none;
+    
+                &:hover{
+                    background-color: map-get($active-theme, 'accent');
+                    transition: all 350ms ease-in-out;
+                    @if $active-theme == $theme-1 {
+                        color: map-get($active-theme, 'white');
+                    } @else {
+                        color: map-get($active-theme, 'black');
+                    }
+                }
+            }
+    
+        }
+    } // end of .header
+
+    .banner {
+        width: 100vw;
+        background-image: url(../img/the-league-of-heroes.jpg);
+        background-size: cover;
+        color: map-get($active-theme, 'white');
+        padding: 10rem 2rem;
+        @if $active-theme == $theme-3 {
+            background-color: darken(map-get($active-theme, 'dark'), 25);
+        } @else {
+            background-color: map-get($active-theme, 'dark');
+        }
+        background-blend-mode: multiply;
+    
+        h1 {
+            font-family: $heading;
+            font-size: $heading-1;
+            letter-spacing: 0.25rem;
+        }
+    
+        h2 {
+            margin: 2rem 0;
+            font-weight: $semi-bold;
+        }
+    
+        // Call to Action Button
+        .cta-button {
+            padding: 1rem 2rem;
+            background-color: map-get($active-theme, 'primary');
+            color: map-get($active-theme, 'white');
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: $semi-bold;
+            transition: all 150ms ease-in-out;
+    
+            &:hover {
+                filter: drop-shadow(3px 3px 3px (map-get($active-theme, 'black')));
+                background-color: map-get($active-theme, 'secondary');
+                transition: all 350ms ease-in-out;
+                @if $active-theme == $theme-1 {
+                    color: map-get($active-theme, 'black');
+                } @else {
+                    color: map-get($active-theme, 'white');
+                }
+            }
+        }
+
+    } // end of .banner
+
+    .container {
+        margin: 0 auto;
+        width: 80vw;
+        
+        h2 {
+            font-size: $heading-2;
+            font-family: $subheading;
+            font-weight: $bold;
+        }
+
+        section {
+            margin: 6rem 0;
+    
+            .team-intro {
+                margin-bottom: 2rem;
+            }
+
+            // Timeline Section
+            .timeline {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0 auto;
+                background-color: transparentize(map-get($active-theme, 'light'), 0.8);
+
+                .event {
+                    width: 70vw;
+                    // margin: 0 auto;
+                    padding: 3rem;
+                    border: 2px dashed (map-get($active-theme, 'accent'));
+                    background-color: transparentize(map-get($active-theme, 'accent'), 0.9);
+                    &:nth-of-type(3){
+                        margin-top: 2rem;
+                    }
+                    &:nth-of-type(4){
+                        margin-top: 2rem;
+                    }
+                    &:nth-of-type(5){
+                        margin-bottom: 4rem;
+                    }
+                }
+
+                .year {
+                    width:fit-content;
+                    margin-top: 5rem;
+                    margin-bottom: -4rem;
+                    padding: 2.7rem 2rem;
+                    font-family: $heading;
+                    font-size: $heading-2;
+                    background-color: map-get($active-theme, 'secondary');
+                    color: map-get($active-theme, 'black');
+                    border-radius: 60rem;
+                    box-shadow: 3px 4px 10px map-get($active-theme, 'medium');
+                    z-index: 2;
+                }
+
+            }
+
+        }
+
+        // Origin Section
+        .origin {
+            padding: 5rem;
+            margin: 0 -8rem;
+            background-color: map-get($active-theme, 'accent');
+            @if $active-theme == $theme-1 {
+            color: map-get($active-theme, 'white');
+            }else{
+                color: map-get($active-theme, 'black');
+            }
+        }
+
+        // Team Section
+        .team {
+            display: grid;
+            grid-template-rows: 80vw;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+            align-items: start;
+            justify-content: center;
+            margin: 0 2rem;
+
+            .hero {
+                border: 2px solid black;  // you have to do an @include for variable to work
+                border-radius: 2rem;
+                background-color: map-get($active-theme, 'accent');
+
+                .hero-bio {
+                    padding: 0 2rem 2rem 2rem;
+                    @if $active-theme == $theme-1 {
+                        color: map-get($active-theme, 'white');
+                    } @else {
+                        color: map-get($active-theme, 'black');
+                    }
+                    h3 {
+                        padding-bottom: 2rem;
+                        border-bottom: 2px solid map-get($active-theme, 'dark');
+                    }
+                }
+                
+                img {
+                    background-color: map-get($active-theme, 'secondary');
+                    border-radius: 2rem;
+                    transform: scale(0.9);
+                }
+            }
+            
+        } // end of .team
+
+        .contact {
+            background-color: transparentize(map-get($active-theme, 'medium'), 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            padding: 3rem;
+            .contact-info {
+                display: flex;
+                gap: 3rem;
+                margin-top: 2rem;
+                h2 {
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+
+    } // end of .container
+
+
+    .footer {
+        padding: 1rem 0;
+        background-color: map-get($active-theme, 'primary');
+        color: map-get($active-theme, 'white');
+        a {
+            color: map-get($active-theme, 'secondary');
+            &:hover{
+                color: map-get($active-theme, 'light');
+            }
+        }
+    }
+} // end of body

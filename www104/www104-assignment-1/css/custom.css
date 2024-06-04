@@ -1,0 +1,74 @@
+/* Web Fonts */
+
+/* font-family: "Calistoga", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+/* font-family: "IBM Plex Sans", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Custom Styles */
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    margin-top: 8rem;
+}
+
+h1, .h1, h2, .h2 {
+    font-family: "Calistoga", serif;
+}
+
+/* MAIN NAV */
+
+.nav-link:hover {
+    border-bottom: solid 1px;
+}
+
+/* LOGO */
+
+.logo {
+    width: 18rem;
+    height: auto;
+}
+
+#first, #second, #third, #fourth {
+    scroll-margin-top: 8rem;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    margin: 0 -0.75rem;
+}
+
+.overlay:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* ARTIST SPOTLIGHT */
+
+.instagrammable {
+   background-color: #27306D;
+   color: #fff; 
+   margin: auto -0.75rem;
+}
+
+.instagrammable h4 {
+    color: #bec6f8;
+}
+.instagrammable a {
+    color: white;
+}
+
+/* FOOTER */
+
+.footer a {
+    color: #bec6f8;
+}

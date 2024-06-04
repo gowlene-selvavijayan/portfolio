@@ -1,0 +1,423 @@
+/* Note: Navigable pages include HOME, ABOUT, CONTACT and CREDITS (found in the footer) */
+
+/* All images from Pexels */
+/* Web Fonts from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Fredoka:300,regular,500,600,700);
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family:'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.wrapper {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 0.125rem;
+}
+
+h2, h3 {
+    font-family: 'Raleway','Open Sans', sans-serif;
+}
+
+/* HORIZONTAL NAV BAR */
+
+.header {
+    display:inline-block;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    position: sticky;
+    z-index: 999;
+}
+
+.logo {
+    float: left;
+    width: 12rem;
+    height: 12rem;
+    background: transparent;
+}
+
+.name {
+    position: relative;
+    top: 1.125rem;
+    left: 0.625rem;
+    font-size: 2.5rem;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    background-color: #CFEAF9;
+}
+
+.nav-list {
+    max-width: 100%;
+    list-style-type:none;
+    margin-right: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.nav-list-item {
+    float: left;
+    padding: 0.625rem;
+    color: #363636;
+}
+
+.nav-list-item:hover {
+    display: block;
+    background-color: #b3ddf4;
+    font-weight:bold;
+}
+
+.nav-list-link {
+    display: block;
+    padding: 0.625rem 1.125rem;
+    color: #363636;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* HOME PAGE banner */
+
+.image-container {
+    min-height: 35vh;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    padding: 10rem;
+    background-image: url(../images/dog-grooming-comb.jpeg);
+    background-size: cover;
+    background-color: #808080;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+.overlay-text-1 {
+    font-size: 2rem;
+    position: relative;
+    color: #fff;
+    padding: 2rem;
+}
+
+/* HOME PAGE aside: Why groom your dog? */
+
+.aside {
+    margin: 0.125rem;
+}
+
+.important {
+    display: block;
+    background-color: #efdad1;
+    padding: 1rem 2rem;
+    margin: 3rem;
+}
+
+/* ABOUT PAGE */
+
+.about {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 1.125rem;
+    margin-bottom: 1.125rem;
+}
+
+.about-text {
+    display: block;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-text h2 {
+    font-size: 2.25rem;
+}
+
+.about img {
+    max-width: 50%;
+    height: 100%;
+    margin-right: 2rem;
+    margin-top: 1.125rem;
+}
+
+/* ABOUT PAGE values section */
+
+.our-values {
+    width: 100%;
+}
+
+.our-values h3 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.values {
+    display: flex;
+    position: relative;
+}
+
+/* QUESTION: how do you make the border adjust to fit content when adjusting the browser window's size? */
+
+.value {
+    flex: 30%;
+    contain: content;
+    height: 12.5rem;
+    padding: 2.25rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    margin: 0.3125rem;
+    text-align: center;
+    overflow: scroll;
+    border-radius: 0.625rem;
+    border: #4D5486 solid 0.125rem;
+}
+
+hr {
+    border-top: 0.325rem dotted #efdad1;
+    border-bottom: #fff;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* ABOUT PAGE services section */
+
+.services h2 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.services img {
+    width: 60%;
+    height: auto;
+    margin-top: 1.125rem;
+}
+
+.image-box-1 {
+    min-height: 60vh;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    background-image: url(../images/dog-nail-clipping.jpeg);
+    background-size: cover;
+    background-position: 50% 85%;
+    background-attachment: fixed;  /* makes image stay in fixed position while scrolling, like peering through a window */
+    background-color: #abaaaa;
+    background-blend-mode: multiply;
+    overflow: scroll;
+}
+
+/* PRICING TABLE begins */
+
+table {
+    table-layout: fixed;
+    width: 120vh;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    padding: 1rem;
+}
+
+tbody td {
+    text-align: center;
+}
+
+thead {
+    background-color: #efdad1;
+}
+
+tbody tr {
+    border-top: 0.125rem solid #efdad1;
+}
+
+tbody tr:nth-child(5) {
+    border-bottom: 0.125rem solid #efdad1;
+}
+
+.cancellations {
+    padding-bottom: 1rem;
+}
+
+.image-box-2 {
+    min-height: 60vh;
+    width:auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    background-image: url(../images/dog-shampoo.jpeg);
+    background-size: cover;
+    background-position: 50% 35%;
+    background-attachment: fixed;  /* makes image stay in fixed position while scrolling, like a window */
+    background-color: #f2dee2;
+    background-blend-mode: multiply;
+    overflow: scroll;
+}
+
+/* ABOUT PAGE aside */
+
+.boarding {
+    margin: 1rem 3rem;
+    margin-bottom: 2rem;
+    padding-top: 0.625rem;
+    padding-bottom: 2rem;
+    margin-top: 0;
+}
+
+.boarding h3 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.boarding a {
+    white-space: nowrap; /* ensures telephone numbers' digits move together across lines */
+}
+
+/* CONTACT PAGE */
+
+.form h2 {
+    font-size: 1.625rem;
+}
+
+.form iframe {
+    width: 40rem;
+    height: 115rem;
+    border: 0;
+    margin-bottom: 3rem;
+}
+
+/* CREDITS PAGE */
+
+.credits {
+    padding-bottom: 3rem;
+    line-height: 2.25rem;
+}
+
+.credits-heading {
+    font-size: 1.625rem;
+    text-align: center;
+}
+
+/* FOOTER across all pages */
+
+/* BLOCKQUOTE */
+
+.blockquote {
+    display: block;
+    border-top: 0.325rem dotted #efdad1;
+    background-color: #fff;
+    margin-top: -1rem;
+    margin-bottom: -2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.blockquote-doodles {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    max-width: 50vh;
+    margin: 0 auto;
+    white-space: nowrap;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+.blockquote img {
+    position: relative;
+    max-width: 25vh;
+    height: auto;
+    white-space: nowrap;
+    margin-left: 3rem;
+}
+
+.blockquote-quote {
+    text-align: center;
+    font-size: 1.31rem;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.blockquote-quote::before {
+    content: "\201C";
+    font-weight: bold;
+    font-size: 6.25rem;
+    line-height: 110%;
+    color: #4D5486;
+    position: absolute;
+    top: 0;
+    left: -3.5rem;
+    font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+}
+
+.blockquote-quote::after {
+    content: "\201D";
+    font-weight: bold;
+    font-size: 6.25rem;
+    color: #4D5486;
+    position: absolute;
+    line-height: 110%;
+    bottom: -3.1rem;
+    right: -3.5rem;
+    font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+}
+
+.blockquote-cite {
+    display: block;
+    padding: 0.625rem;
+    font-size: 0.925rem;
+    text-align: center;
+    line-height: 0.625rem;
+    width: 100%;
+    align-self: center;
+}
+
+.footer {
+    display: inline-block;
+    width: 100%;
+    background-color: #CFEAF9;
+    color: #363636;
+    padding: 1.125rem;
+    padding-bottom: 0.825rem;
+    margin-top: 1.75rem;
+    text-align: center;
+}
+
+.footer a {
+    display: block;
+    padding: 0.125rem;
+}
+
+/* I hope you enjoyed going through the website! */

@@ -1,0 +1,35 @@
+@mixin center-all {
+    text-align: center;
+}
+
+body {
+    @include center-all();
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-list {
+    @include reset-list();
+}
+
+@mixin reset-link {
+    text-decoration: none;
+}
+
+li a {
+    @include reset-link();
+}
+
+@mixin format-img {
+    width: 45vw;
+    height: auto;
+    border-radius: 3rem;
+}
+
+.contact img {
+    @include format-img();
+}

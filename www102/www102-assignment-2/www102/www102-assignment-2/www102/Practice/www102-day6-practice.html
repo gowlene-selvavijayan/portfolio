@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www102 | Day 6 Lab Exercise</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        :root {
+            font-size: 0.625em;
+        }
+        body {
+            margin: 0;
+            display: block;
+            background-color: rgba(250,250,250,0.25);
+            font: 400 calc(1.6rem + 0.20833333vw)/1.25 sans-serif;
+            color: #333;
+        }
+        .header-wrapper {
+            background-color: #b5b5b5;
+        }
+        .header {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 6.4rem 1.6rem;
+        }
+        .header-title {
+            margin-top: 3em;
+            font-size: calc(3.2rem + 0.41666667vw);
+            color: #333;
+        }
+        .header-instructions {
+            color: #333;
+        }
+        .header-instructions :last-child {
+            margin-bottom: 0;
+        }
+        .table-wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 6.4rem 1.6rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: calc(1.4rem + 0.20833333vw);
+            text-align: left;
+        }
+        th,td {
+            padding: 0.6rem;
+            border: 1px solid #e5e5e5;
+        }
+        thead th {
+            background-color: #d5d5d5;
+            border-top-color: #d5d5d5;
+            border-left-color: #d5d5d5;
+            border-right-color: #d5d5d5;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header class="header">
+            <h1 class="header-title">Browser Default Styles</h1>
+            <div class="header-instructions">
+                <p>Knowing what default styles we inherit from the browser's own stylesheet can make our lives as front-end developers much easier.</p>
+                <p>Using your chosen browser's developer tools, investigate the default CSS properties and values from the list below, and keep track of what you find in the table.</p>
+                <p>To aid in your investigation you should use a copy of "The Kitchen Sink" with no custom CSS, Reset or Normalize.</p>
+                <p>Upload your completed table to your Matrix server space and link as "www102 Day 6 Practice" or a similar name - it's your website after all.</p>
+            </div>
+        </header>
+    </div>
+    <section class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Element Name</th>
+                <th>Default font-size</th>
+                <th>Default margin</th>
+                <th>Default padding</th>
+                <th>Other observations</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>h1</td>
+                <td>32 px</td>
+                <td>21.44px 0</td>
+                <td>0px</td>
+                <td>display: block; font-weight: 700;</td>
+            </tr>
+            <tr>
+                <td>h2</td>
+                <td>24px</td>
+                <td>19.92px 0</td>
+                <td>0 px</td>
+                <td>display: block; font-weight: 700;</td>
+            </tr>
+            <tr>
+                <td>h3</td>
+                <td>18.72px</td>
+                <td>18.72px 0</td>
+                <td>0px</td>
+                <td>display: block; font-weight: 700;</td>
+            </tr>
+            <tr>
+                <td>h4</td>
+                <td>16px</td>
+                <td>21.28px</td>
+                <td>0px</td>
+                <td>display: block; font-weight: 700;</td>
+            </tr>
+            <tr>
+                <td>h5</td>
+                <td>13.28px</td>
+                <td>22.1776px 0</td>
+                <td>0px</td>
+                <td>display: block; font-weight: 700;</td>
+            </tr>
+            <tr>
+                <td>h6</td>
+                <td>10.72px</td>
+                <td>24.9776px 0</td>
+                <td>0px</td>
+                <td>display: block; font-weight: 700;</td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>16px</td>
+                <td>16px 0</td>
+                <td>0px</td>
+                <td>display: block; font-weight: 700;</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>16px</td>
+                <td>0px</td>
+                <td>0px</td>
+                <td>color: rgb(0, 0, 238); text-decoration-color: rgb(0, 0, 238)
+                    text-decoration-line: underline;</td>
+            </tr>
+            <tr>
+                <td>a:link</td>
+                <td>16px</td>
+                <td>0px</td>
+                <td>0px</td>
+                <td>border-color, color: rgb(0, 112, 224);</td>
+            </tr>
+            <tr>
+                <td>a:visited</td>
+                <td>16px</td>
+                <td>0px</td>
+                <td>0px</td>
+                <td>border-color, color: rgb(85, 26, 139)</td>
+            </tr>
+            <tr>
+                <td>a:focus</td>
+                <td>16px</td>
+                <td>0px</td>
+                <td>0px</td>
+                <td>focus-visible: outline-offset: 1px; outline-color: rgb(0, 95, 204);</td>
+            </tr>
+            <tr>
+                <td>a:hover</td>
+                <td>16px</td>
+                <td>0px</td>
+                <td>0px</td>
+                <td>no difference until a:active</td>
+            </tr>
+            <tr>
+                <td>a:active</td>
+                <td>16px</td>
+                <td>0px</td>
+                <td>0px</td>
+                <td>border-color, color: rgb(255, 0, 0)</td>
+            </tr>
+            <tr>
+                <td>ul</td>
+                <td>16px</td>
+                <td>16px 0</td>
+                <td>padding-left: 40px</td>
+                <td>display: block;</td>
+            </tr>
+            <tr>
+                <td>ul > li</td>
+                <td>16px</td>
+                <td>0px</td>
+                <td>0px</td>
+                <td>display: list-item;</td>
+            </tr>
+            <tr>
+                <td>ol</td>
+                <td>16px</td>
+                <td>16px 0</td>
+                <td>padding-left: 40px</td>
+                <td>display: block;</td>
+            </tr>
+            <tr>
+                <td>ol > li</td>
+                <td>16px</td>
+                <td>0px</td>
+                <td>0px</td>
+                <td>display: list-item;</td>
+            </tr>
+            <tr>
+                <td>dl</td>
+                <td>16px</td>
+                <td>16px 0</td>
+                <td>0px</td>
+                <td>display: block;</td>
+            </tr>
+            <tr>
+                <td>dt</td>
+                <td>16px</td>
+                <td>0px</td>
+                <td>0px</td>
+                <td>display: block;</td>
+            </tr>
+            <tr>
+                <td>dd</td>
+                <td>16px</td>
+                <td>margin-left: 40px;</td>
+                <td>0px</td>
+                <td>display: block;</td>
+            </tr>
+            <tr>
+                <td>blockquote</td>
+                <td>16px</td>
+                <td>16px 40px</td>
+                <td>0px</td>
+                <td>display: block;</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

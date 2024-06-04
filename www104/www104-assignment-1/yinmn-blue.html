@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" id="top-of-page">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YInMn Blue</title>
+        <meta name="description" content="Discover YInMn Blue, the first blue pigment to be created in 200 years and the people who stumbled upon it accidentally." >
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top shadow-lg"> <!-- navbar-expand determines where hamburger menu toggler disappears and nav expands horizontally -->
+                <div class="container-fluid"> <!-- .container-fluid -->
+                    <a href="#top-of-page"><img src="img/site-logo.png" alt="Kaleidoscope Encyclopedia of Colour logo" class="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel"> <!-- mobile nav -->
+                        <div class="offcanvas-header">
+                            <p class="h5 offcanvas-title" id="offcanvasDarkNavbarLabel">Main Menu</p>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item px-md-2"><a href="#top-of-page" class="nav-link text-white">Home</a></li>
+                                <li class="nav-item px-md-2"><a href="#first" class="nav-link text-white">Intro</a></li>
+                                <li class="nav-item px-md-2"><a href="#second" class="nav-link text-white">History</a></li>
+                                <li class="nav-item px-md-2"><a href="#third" class="nav-link text-white">Impact</a></li>
+                                <li class="nav-item px-md-2"><a href="#fourth" class="nav-link text-white">Quiz</a></li>
+                            </ul>
+                        </div> <!-- .offcanvas-body -->
+                    </div> <!-- /.offcanvas #offcanvasDarkNavbar -->
+                </div> <!-- /.container-fluid -->
+            </nav>  
+        </header>
+
+        <div class="container-fluid"> <!-- .container-fluid -->
+            
+            <!-- .carousel -->
+            <div id="indicators" class="carousel slide carousel-fade d-none d-sm-block" data-bs-ride="true"> <!-- carousel fade transitions. data-bs-ride="true" ensures carousel will only autoplay after first user interaction. -->
+            
+                <div class="carousel-indicators">    
+                    <button type="button" data-bs-target="#indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item overlay active">
+                        <img src="img/mas-subramanian-1.jpg" class="d-block w-100" alt="Mas Subramanian in lab">
+                        <div class="carousel-caption shadow text-white z-2">
+                            <p class="h5">The Newest Blue in 200 Years</p>
+                            <p>Professor Mas Subramanian looks at the blue pigment that was discovered at his lab in Oregon State University.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item overlay">
+                        <img src="img/paint-tube.jpg" class="d-block w-100" alt="YInMn blue paint">
+                        <div class="carousel-caption shadow text-white z-2">
+                            <p class="h5">A Rare and Expensive Pigment to Find</p>
+                            <p>This brilliant blue has caught the eye of artists and industrialists alike.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item overlay">
+                        <img src="img/mas-subramanian-2.jpg" class="d-block w-100" alt="Mas Subramanian in lab">
+                        <div class="carousel-caption shadow text-white z-2">
+                            <p class="h5">Oregon State University's Own Brand-New Blue</p>
+                            <p>YInMn Blue is also fondly known as Mas Blue and Oregon Blue, and even dubbed "Bluetiful" by Crayola.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#indicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#indicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> <!-- /.carousel -->
+
+            <main>
+                
+                <article class="row" id="first"> <!-- .row -->
+                    <h1 class="my-2 pt-4 lh-lg display-4 text-center">Discover YInMn Blue</h1>
+
+                    <div class="col-12 col-md-8 col-lg-6 order-md-2 px-4 px-md-5"> <!-- first .col -->
+                        <section class="mt-3 py-4 text-md-center">
+                            <figure class="text-center">
+                                <a href="https://www.sciencedirect.com/science/article/pii/S2590049822001199" target="_blank"><img src="img/chemistry.jpeg" alt="YInMn blue pigment chemistry" class="w-75 mb-5"></a>
+                                <figcaption class="small mb-5">The unique chemical configuration of YInMn Blue and its unusual "trigonal bipyramidal" crystalline structure seen here is being used to create a range of new stable, non-toxic pigments for the paint and pigment industries. <cite>Graphic courtesy of Oregon State University via Wikimedia Commons.</cite></figcaption>
+                            </figure>
+                            <hr class="mb-5">
+                            <h2 class="display-6">An Accidental Discovery</h2>
+                            <p>The first new blue pigment in 200 years was the last thing Oregon State University materials science students thought they would find.</p>
+                            <p>In 2009, as part of his lab, materials science professor Dr. Mas Subramanian was working with students to manufacture new materials that could be used in electronics. They would mix and grind chemicals, then heat them to over 2000 degrees Fahrenheit. One grad student, Andrew E. Smith, took a particular mix out of the furnace to find it had turned a surprising, bright blue color.</p>
+                            <a href="https://www.npr.org/2016/07/16/485696248/a-chemist-accidentally-creates-a-new-blue-then-what" target="_blank" class="btn btn-dark my-2">Read Article</a>
+                        </section>
+                        <hr>
+                        <section class="py-3">
+                            <img src="img/blue-pigment-transparent.jpg" alt="YInMn blue pigment" class="img-fluid w-50 w-md-25 float-start float-md-end">
+                            <h3>The Science Behind It</h3>
+                            <p>Scientists can’t technically create a new color, but they can create new materials that will refract and absorb light in new ways. Also fondly known as Oregon Blue and Mas Blue, YInMn Blue has a unique elemental structure which allows its manganese ions to absorb red and green wavelengths of light, reflecting back a deep but vibrant blue.</p>
+                            <p>"YInMn Blue" (pronounced yin-min) is named after its chemical makeup of yttrium, indium and manganese oxides (YIn<sub>1-x</sub>Mn<sub>x</sub>O<sub>3</sub>). Since it derives from this mix of various metal oxides (a metal element combined with oxygen), it is considered a "complex inorganic pigment." That means it's not a naturally occurring pigment (such as ultramarine, which comes from the rock lapis lazuli). It is the first blue pigment to be synthesized in a lab in over 200 years, the last being cobalt in 1802.</p>
+                        </section>
+                        <img src="img/mas-subramanian-3.jpg" alt="Mas Subramanian in his office" class="img-fluid rounded mb-3 mb-md-5 d-none d-md-block">
+                    </div> <!-- /.col -->
+
+                    <div class="col-12 col-md-4 col-lg-3 order-md-1 ps-4"> <!-- second .col -->
+                        <section class="py-3" id="second">
+                            <h3>The Elusive Blue Pigment</h3>
+                            <p>Blue is one of the rarest colours in nature, and creating it for the artist’s palette has been a challenge throughout history. The Ancient Egyptians were the first to make a synthetic blue pigment which could be used instead of a mineral blue pigment. Egyptian Blue, thought to be made by heating sand, copper, and lime, remained in use until around 800 AD, when the recipe for its manufacture was lost.</p>
+                            <p>For centuries, the only source for blue pigments were minerals like Lapis Lazuli and Azurite, which were rare and expensive. When Lapis Lazuli reached Europe in the 13th century, almost all of it was extracted from mines in present-day Afghanistan and Pakistan. It was the most expensive pigment used by artists due to its rarity and labour-intensive preparation. Because of this, it came to symbolise the divine in Renaissance Europe and was reserved only for the most important subjects – most notably for the robes of the Virgin Mary.</p>
+                            <figure class="text-center">
+                                <a href="https://www.nationalgallery.org.uk/paintings/sassoferrato-the-virgin-in-prayer" target="_blank"><img src="img/virgin-mary.jpeg" alt="Painting of the Virgin Mary with vibrant blue robes" width="636" height="800" class="my-2 img-fluid rounded"></a>
+                                <figcaption class="small"><cite><a href="https://www.nationalgallery.org.uk/paintings/sassoferrato-the-virgin-in-prayer">The Virgin in Prayer (1640-1650) by Sassoferrato.</a> Art Courtesy of the National Gallery, London, UK.</cite></figcaption>
+                            </figure>
+                        </section>
+                        <section class="py-3">
+                            <h3>The Costliest Color</h3>
+                            <p>A tiny 1.3 oz tube of YInMn Blue currently sells for $179.40. To put that into perspective, 1.3 oz is the weight of about six grapes. The presence of the expensive metal Indium in YInMn makes it more expensive than other paints. The challenge, Subramanian explains, is to create yet another vibrant new blue pigment that is not only easy to manufacture and non-toxic (like YInMn) but also cheaper.</p>
+                        </section>
+                        <section class="py-3" id="third">
+                            <h3>A Monumental Moment</h3>
+                            <p>A blue pigment that is both safe and stable eluded the Egyptians, the Han Dynasty and the Mayans. The French developed cobalt blue in the 1800s, but it contains carcinogens. Prussian blue releases cyanide. Other pigments break down in hot or acidic conditions.</p>
+                            <p>In tests, YInMn blue has proved to be more durable than cobalt blue, which tends to fade over time. Better yet, the pigment and its ingredients are completely nontoxic.</p>
+                        </section>
+                    </div> <!-- /.col -->
+
+                    <div class="row col-12 col-lg-3 order-md-3 px-4 ps-lg-0 pe-lg-4"> <!-- third .col -->
+                        <section class="py-3 col-12 col-md-4 col-lg-12">
+                            <h3>A Revolutionary Pigment</h3>
+                            <p>The intense, vivid, reflective compound of YInMn Blue holds promise as a heat- and acid-resistant pigment free of toxins. It is the first blue pigment ever made that can deflect heat.</p>
+                            <p>Beyond its use in art, YInMn has also caught the eye of the industrial world. This color is so durable that even when placed in oil or water it does not fade which makes it an attractive and versatile commercial product.</p>
+                            <p>"What fascinates me is how far it has gone from its modest beginnings," Subramanian says. "This rarely happens to something made in a science lab."</p>
+                        </section>
+                    
+                        <section class="py-3 col-12 col-md-4 col-lg-12">
+                            <h3>Industrial Applications</h3>
+                            <p>As a non-toxic, stable, durable and heat-reflective substance, it can easily be used for energy-saving coatings. Able to withstand extreme weather conditions, it can protect roofs from weathering while also improving energy efficiency since it allows homes to use less energy for cooling. In 2015, the Shepherd Color Company licensed YInMn Blue for use in a wide range of coatings and plastics.</p>
+                            <img src="img/roofing.jpg" alt="Two roofers" class="img-fluid rounded mt-lg-3">
+                        </section>
+                        <section class="py-3 col-12 col-md-4 col-lg-12">
+                            <h3>Rainbow of Opportunity</h3> 
+                            <p>Since their historic blue discovery, Subramanian and his team have successfully designed other durable colors - yellow, orange, green and purple - by tweaking the YInMn chemistry. The color missing in the palette is red. Red typically tends to come from heavy metals or other toxic substances, like mercury and lead so a better, non-toxic red pigment would be in high demand if found.</p>
+                            <a href="img/rainbow-pigment.jpg" target="_blank"><img src="img/rainbow-pigment.jpg" alt="Rainbow color wheel of YInMn-derived pigments" class="img-fluid mt-3 mb-5 mt-md-1 mb-md-3 mt-lg-5"></a>  
+                        </section>
+                    </div> <!-- /.col -->
+
+                </article> <!-- /.row -->
+
+                <section class="instagrammable p-5 mb-5">
+                    <div class="row">
+                        <h3 class="pb-3 col-xl-3">Artist Spotlight</h3>
+                        <div class="col-6 col-xl">
+                            <a href="https://doodlewash.com/review-yinmn-blue-watercolor/" target="_blank"><img src="img/misty-morning-painting.jpeg" alt="Painting using YInMn Blue" class="rounded img-fluid w-100 w-md-75"></a>
+                        </div>
+                        <div class="col-6 col-xl">
+                            <h4>Misty Morning (2020) by Sandra Strait</h4>
+                            <p class="d-none d-md-block">Every color used in this painting is a mix of YInMn Blue. Living in Oregon, the artist experiences the state's signature misty, low-key mornings often. Sandra Strait found that YInMn was a color that captured the essence of this scene well.</p>
+                            <p class="d-md-none">Every color used in this painting is a mix of YInMn Blue.</p>
+                            <a href="https://doodlewash.com/review-yinmn-blue-watercolor/" target="_blank" class="btn btn-dark border-white">See their work with YInMn Blue</a>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- EXPERIMENTING: Pop Quiz using Accordion Component -->
+            <!-- I've always been intrigued by accordions and have been waiting for the moment I'd get to learn how to make one in the program. I'm glad Bootstrap has given me access to create an accordion easily, prior to me knowing how to make one from scratch. -->
+            <!-- I thought would be cool to leverage an accordion component to offer the user a pop quiz. I felt it would be a fun way to test their knowledge after going through the main article, with answers and details that can be easily hidden and revealed. -->
+                
+            <aside id="fourth" class="quiz accordion m-5">
+                <div class="quiz-instructions text-center py-3">
+                    <h2 class="pb-2">Pop Quiz</h2>
+                    <p>Try answering the questions below to test your understanding! Toggle the arrow to reveal the answer.</p>
+                </div>
+                <div class="accordion-item border"> <!-- QUESTION 1 -->
+                    <h3 class="accordion-header h2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            What does YInMn stand for?
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <strong>YInMn Blue is named after its chemical makeup (YIn<sub>1-x</sub>Mn<sub>x</sub>O<sub>3</sub>).</strong> Y for yttrium, In for indium, and Mn for manganese.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item"> <!-- QUESTION 2 -->
+                    <h3 class="accordion-header h2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What else is YInMn Blue fondly known as?
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <strong>Oregon Blue and Mas Blue.</strong> YInMn Blue is fondly known as Oregon Blue, as a nod to its humble beginnings in a Oregon State University lab, and Mas Blue, after its discoverer. And after a public vote, Crayola's YInMn-blue-inspired crayon was named "Bluetiful".
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item"> <!-- QUESTION 3 -->
+                    <h3 class="accordion-header h2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Before YInMn Blue, what was the last blue pigment to be created artifically?
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <strong>Cobalt Blue.</strong> The last new complex inorganic blue pigment to be developed was cobalt blue by French chemist Louis Jacques Thénard in 1802.
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div> <!-- /.container-fluid -->
+
+        <footer class="footer bg-dark text-white px-5 pt-5 pb-2">
+            
+            <h2 class="pb-3">More Information</h2>
+            <div class="credits row"> <!-- .credits -->
+                <!-- text content and color inspiration credits -->
+                <div class="text-credits col pe-3">
+                    <h3 class="h4">Links</h3>
+                    <ul>
+                        <li><cite><a href="https://www.npr.org/2016/07/16/485696248/a-chemist-accidentally-creates-a-new-blue-then-what" target="_blank">"A Chemist Accidentally Creates A New Blue. Then What?"</a>. Article by Gabriel Rosenberg, Short Wave, NPR.</cite></li>
+                        <li><cite><a href="https://www.jacksonsart.com/blog/2021/02/16/yinmn-blue-the-newest-blue-pigment/" target="_blank">"Pigment Stories: YInBlue, The Newest Blue Pigment"</a>. Article by Evie Hatch for Jackson's Art Supplies Blog</cite></li>
+                        <li><cite><a href="https://www.sciencedirect.com/science/article/pii/S2590049822001199" target="_blank">"YInMn blue - 200 Years in the making: New intense inorganic pigments based on chromophores in trigonal bipyramidal coordination"</a>. Article by Mas Subramanian and Jun Li, Materials Today Advances, Volume 16, 2022. Found via Science Direct.</cite></li>
+                        <li><cite><a href="https://terra.oregonstate.edu/2014/10/accidentally-blue/" target="_blank">"Accidentally Blue"</a>. Article by Terra Magazine, Oregon State University.</cite></li>
+                        <li><cite><a href="https://www.thisiscolossal.com/2017/05/crayon-blue-pigment/" target="_blank">"The First Blue Pigment Created in Over 200 Years to be Used in a Crayon"</a>. Article by Kate Sierzputowski. Found on Colossal art magazine.</cite></li>
+                        <li><cite><a href="https://www.wbur.org/hereandnow/2018/05/14/new-blue-pigment-color-chemistry" target="_blank">"Discovery Of 1st New Blue Pigment In 200 Years Leads To Quest For Elusive Red"</a>. Article by WBUR.</cite></li>
+                        <li><cite><a href="https://science.oregonstate.edu/IMPACT/2017/10/yinmn-blue-now-available-artists#:~:text=Subramanian%20continues%20to%20be%20surprised,in%20the%20market%20for%20artists." target="_blank">"YInMn Blue now available to artists"</a>. Article by Srila Nayak for IMPACT Magazine, Oregon State University College of Science.</cite></li>
+                    </ul>
+                </div>
+                <!-- photo credits -->
+                <div class="img-credits col-xs-10 col-md ps-3">
+                    <h3 class="h4">Photo Credits</h3>
+                    <ul>
+                        <li><cite><a href="https://www.karlmaasdam.com/photographs/#itemId=5ceee4234785d3d4b0b6de67" target="_blank">Mas Subramanian in 2009</a>. Photo Courtesy of Karl Maasdam.</cite></li>
+                        <li><cite><a href="https://www.jacksonsart.com/blog/2021/02/16/yinmn-blue-the-newest-blue-pigment/" target="_blank">YInMn Blue paint test</a>. Photo Courtesy of Evie Hatch at Jackson's Art Supplies.</cite></li>
+                        <li><cite><a href="https://www.npr.org/2016/07/16/485696248/a-chemist-accidentally-creates-a-new-blue-then-what" target="_blank">Mas Subramanian in 2019</a>. Photo Courtesy of Karl Maasdam.</cite></li>
+                        <li><cite><a href="https://commons.wikimedia.org/wiki/File:Pigment_discovery_(5959304954).jpg" target="_blank">Pigment Discovery</a>. <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank">CC BY-SA 2.0</a>. Source: Oregon State University. Found via Wikimedia Commons.</cite></li>
+                        <li><cite><a href="https://commons.wikimedia.org/wiki/File:YInMn_Blue_-_cropped.jpg" target="_blank">YInMn Blue</a>. <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0 DEED</a>. Source: Mas Subramanian. Found on Wikimedia Commons.</cite></li>
+                        <li><cite><a href="https://commons.wikimedia.org/wiki/File:Photo_of_Mas_Subramanian.jpg#/media/File:Photo_of_Mas_Subramanian.jpg" target="_blank">Mas Subramanian in his office</a>. <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0 DEED</a>. Source: Jtangosu. Found via Wikimedia Commons.</cite></li>
+                        <li><cite><a href="https://www.nationalgallery.org.uk/paintings/sassoferrato-the-virgin-in-prayer" target="_blank">The Virgin in Prayer (1640-1650) by Sassoferrato</a>. Art Courtesy of the National Gallery, London, UK.</cite></li>
+                        <li><cite><a href="https://doodlewash.com/review-yinmn-blue-watercolor/" target="_blank">Misty Morning (2020)</a>. Art Courtesy of Sandra Strait.</cite></li>
+                        <li><cite><a href="https://www.sciencedirect.com/science/article/pii/S2590049822001199" target="_blank">Turning YInMn Blue to various colored pigments</a>. Courtesy of Mas Subramanian and Jun Li. Found on Science Direct.</cite></li>
+                        <li><cite><a href="https://stock.adobe.com/ca/images/roofer-using-air-or-pneumatic-nail-gun-and-installing-metal-roof-tile-on-top-roof-builder-working-on-roof-of-new-building/343037413?prev_url=detail" target="_blank">Builder working on roof of new building</a>. Courtesy of Visoot. Found on Adobe Stock.</cite></li>
+                    </ul>
+                </div>
+            </div> <!-- /.credits -->
+
+            <hr>
+
+            <div class="endnote text-center">
+                <a href="#top-of-page">Take me to the top</a>
+                <p>
+                    <small>Copyright &copy; 2024 | Gowlene Selvavijayan</small>
+                </p>
+            </div>
+
+        </footer>
+
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>

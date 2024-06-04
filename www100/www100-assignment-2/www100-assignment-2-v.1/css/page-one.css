@@ -1,0 +1,160 @@
+/* Web Fonts */
+/* font-family: 'Bebas Neue', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    margin: 3rem;
+    max-width: 80%;
+}
+
+header {
+    margin: 0;
+    width: 100%;
+    padding: 5rem;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+footer {
+    margin: 0;
+    width: 100%;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.version1, .version2 {
+    padding: 1rem 2rem;
+    background-color: rgb(132, 36, 52);
+    border-left: 0.125rem solid #1e1e1e;
+    border-right: 0.125rem solid #1e1e1e;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.55rem;
+}
+
+.version1:hover {
+    background-color: rgb(166, 65, 82);
+}
+
+.version2:hover {
+    background-color: rgb(166, 65, 82);
+}
+
+code {
+    background-color: rgb(236, 236, 236);
+    padding: 0.125rem;
+    color: rgb(166, 65, 82);
+
+}
+/* 
+summary {
+    display: block;
+    font-size: 1.625rem;
+}
+
+.position p {
+    width: 85%;
+    padding: 0.625rem;
+    margin-left: 0.625rem;
+}
+
+.position-value1 {
+    background-color: rgb(255, 163, 14);
+    padding: 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.value1 img {
+    display: flex;
+    max-width: 50%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.position-value2 {
+    background-color: rgb(255, 163, 14);
+    padding: 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.position-value3 {
+    background-color: rgb(255, 163, 14);
+    padding: 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.position-value4 {
+    background-color: rgb(255, 163, 14);
+    padding: 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.position-value5 {
+    background-color: rgb(255, 163, 14);
+    padding: 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+/* 
+.versions-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(225, 82, 72);
+
+}
+
+.versions-list li, a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.version {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+    text-align: center;
+    list-style-type: none;
+}
+
+.version:hover {
+    background-color: rgb(210, 66, 56);
+
+} */

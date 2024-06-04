@@ -1,0 +1,101 @@
+/* Web Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff;
+    font-family:'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.wrapper {
+    padding-left: 25rem;
+    padding-top: 1rem;
+    margin-right: 4rem;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.125rem;
+    color: #C1B291;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    top: 0;
+    background-color: #41483a;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+}
+
+
+.nav-list {
+    max-width: 100vh;
+    list-style-type:none;
+    overflow: hidden;
+}
+
+.nav-list-item {
+    padding: 0.625rem;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.nav-list-link {
+    display: block;
+    padding: 0.625rem;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-list-item:hover {
+    background-color: #32392c;
+    font-style: oblique;
+    transition: 60ms ease-in-out;
+    text-decoration: none;
+} 
+
+.about img {
+    margin-top: 1rem;
+    width: 30vh;
+    height: auto;
+    border-radius: 1.125rem;
+}
+
+.about-text {
+    float: left;
+}
+
+footer {
+    display: block;
+    float: right;
+    margin-right: 0.625rem;
+    padding-bottom: 0.225rem;
+    padding-right: 0.225rem;
+}

@@ -1,0 +1,586 @@
+/* Web Fonts */
+
+/* font-family: 'Lato', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* CSS Foundation */
+
+:root {
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+address {
+    font-style: normal;
+}
+
+.wrapper {
+    margin: 0 4.5rem;
+    line-height: 1.5;
+    font-size: 1.15rem;
+}
+
+/* Typographic Scale */
+
+h1, .h1 {
+    font-size: 40px; 
+    font-size: calc(0.0625rem * 40);
+    margin: 1em 0 0.5em;
+    line-height: 1.5;
+}
+   
+h2, .h2 {
+font-size: 32px;
+font-size: calc(0.0625rem * 32);
+margin: 1em 0 0.5em;
+}
+
+h3, .h3 {
+font-size: 28px;
+font-size: calc(0.0625rem * 28);
+margin: 1em 0 0.5em;
+}
+
+h4, .h4 {
+font-size: 24px;
+font-size: calc(0.0625rem * 24);
+margin: 1em 0 0.5em;
+}
+
+h5, .h5 {
+font-size: 20px;
+font-size: calc(0.0625rem * 20);
+margin: 1em 0 0.5em;
+}
+   
+h6, .h6 {
+font-size: 16px;
+font-size: calc(0.0625rem * 16);
+margin: 1em 0 0.5em;
+}
+
+small, .small {
+font-size: 14px;
+font-size: calc(0.0625rem * 14);
+margin: 1em 0 0.5em;
+}
+
+/* HEADER Main Navigation */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFDC25;
+    color: #000;
+    padding: 2rem;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 2.5rem;
+}
+
+.nav-list-item {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.nav-list-link {
+    display: inline-block;
+    padding: 1rem;
+    margin-left: 2rem;
+    color: #000;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: all 250ms ease-in-out;
+}
+
+.nav-list-link:hover {
+    background-color: #5C108B;
+    color: #fff;
+    padding: 1rem;
+    transition: all 250ms ease-in-out;
+}
+
+.booking-link {
+    background-color: #3DBEA7;
+    color: #000;
+    border-radius: 2rem;
+    border: none;
+    padding: 1rem;
+    transition: all 350ms ease-in-out;
+}
+
+.logo {
+    display: inline-block;
+    width: 15rem;
+    height: auto;
+    padding: 0 1rem;
+    line-height: 1;
+}
+
+/* HOME PAGE */
+
+.home-page-banner {
+    display: flex;
+    flex-flow: column wrap;   
+    justify-content: center;
+    padding: 3rem;
+    margin: 3rem -4.5rem;
+    margin-top: 0;
+    height: 60vh;
+    background-image: url(../img/sensory-swing-3.jpeg);
+    background-size: cover;
+    background-color: #4e4e4e;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: #fff
+}
+
+.home-page-banner-content {
+    width: 60vw;
+}
+
+.learn-more-button {
+    display: inline-flex;
+    background-color: #ED166D;
+    text-decoration: none;
+    justify-content: center;
+    width: 10rem;
+    border-radius: 3rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.15rem;
+    color: #fff;
+    transition: all 350ms ease-in-out;
+}
+
+.learn-more-button:hover {
+    background-color: #3DBEA7;
+    color: #000;
+    padding: 1rem;
+    transition: all 350ms ease-in-out;
+}
+
+.intro {
+    margin: 5rem 0;
+}
+
+.intro h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.purpose {
+    background-color: #3DBEA7;
+    padding: 3rem 5rem;
+    margin: 4rem -4.5rem;
+}
+
+.focus h2 {
+    padding: 1rem 0;
+}
+
+.focus ul {
+    border-left: 0.85rem solid #ED166D;
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+    list-style-type: none;
+}
+
+/* Testimonials */
+
+.testimonials h2 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.testimonial-who {
+    background-color: #3DBEA7;
+    margin: -3rem -2rem 1rem -2rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    border: 0.0625rem solid #3DBEA7;
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    margin: 1rem 0.5rem 3rem 0;
+    width: 32vw;
+    z-index: -1;
+}
+
+.testimonial-card .h5 {
+    margin: 1rem;
+    text-align: center;
+}
+
+.banner-2 {
+    background-image: url(../img/services/speech-therapy-2.jpeg);
+    background-size: cover;
+    background-color: #5b5b5b;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding: 12rem;
+    margin: 0 -4.5rem;
+}
+
+.banner-3 {
+    background-image: url(../img/services/therapy-high-five.jpeg);
+    background-size: cover;
+    background-color: #7b7b7b;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding: 12rem;
+    margin: -2rem -4.5rem 0 -4.5rem;
+}
+
+/* ABOUT PAGE */
+
+.about-banner {
+    display: flex;
+    flex-flow: column wrap;   
+    justify-content: flex-end;
+    padding: 4rem;
+    margin: 4rem -4.5rem;
+    margin-top: 0;
+    height: 60vh;
+    background-image: url(../img/upside-down-2.jpeg);
+    background-size: cover;
+    background-color: #4e4e4e;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: #fff
+}
+
+/* secondary navigation starts */
+
+.about-nav {
+    margin: -4rem -4.5rem 0 -4.5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #FFDC25;
+    position: sticky;
+    top: 0;
+}
+
+.about-nav-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.about-nav-list li {
+    padding: 0.5rem;
+    line-height: 2;
+}
+
+.about-nav-list a {
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem;
+}
+
+.about-nav-list a:hover {
+    border-bottom: 0.125rem solid #5C108B;
+    transition: all 150ms ease-in-out;
+}
+
+#mission, #offerings, #space, #team {
+    line-height: 1.75;
+    scroll-margin-top: 8rem;
+}
+
+/* secondary navigation ends */
+
+.who-we-are {
+    margin: 4rem 0 0 0;
+}
+
+.neurodiversity {
+    padding: 6rem;
+    margin: 4rem -4.5rem 0 -4.5rem;
+    background-image: url(../img/hamster-wheel.jpeg);
+    background-size: cover;
+    background-color: #3b3b3b;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.mission {
+    padding: 2rem 0 6rem 0;
+}
+
+.what-we-offer {
+    background-color: #3DBEA7;
+    padding: 2rem 4rem;
+    margin: 0 -4.5rem;
+    padding-bottom: 4rem;
+}
+
+.about-heading {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.offering-card-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 0;
+    margin: 1rem 0.5rem;
+    border-radius: 1rem;
+    border: solid 0.0125rem #4e4e4e;
+    box-shadow: 0.15rem 0.15rem 0.25rem #000;
+}
+
+.offerings img {
+    width: 50vw;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+.offerings p {
+    display: block;
+    text-align: center;
+    max-width: 40vw;
+}
+
+.contact-button {
+    background-color: #5C108B;
+    display: block;
+    padding: 1rem;
+    margin: 3rem auto 0 auto;
+    width: 10rem;
+    border-radius: 3rem;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: solid 0.0125rem #5C108B;
+    font-size: 1.15rem;
+}
+
+.contact-button a {
+    padding: 1rem;
+}
+
+.contact-button:hover {
+    padding: 1rem;
+    background-color:#FFDC25;
+    color: #000;
+    transition: all 250ms ease-in-out;
+    border: solid 0.0125rem #4e4e4e;
+}
+
+/* Our Space */
+
+.space {
+    padding: 2rem 0;
+}
+
+.space img {
+    display: block;
+    width: 75vw;
+    height: auto;
+    margin: 3rem auto 2rem auto;
+    border-radius: 1rem;
+}
+
+/* Our Team */
+
+.team-member-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-bottom: 5rem;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: solid 0.0125rem #4e4e4e;
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem 0.25rem #4e4e4e;
+    width: 32vw;
+    margin: 1rem 0.5rem 3rem 0.5rem;
+    padding: 1rem;
+}
+
+.team-card img {
+    width: 20vw;
+    height: auto;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    transition: all 350ms ease-in-out;
+}
+
+.team-card:hover > img {
+    width: 21.5vw;
+    height: auto;
+    transition: all 350ms ease-in-out;
+}
+
+
+/* CONTACT PAGE */
+
+.contact {
+    margin-top: 4rem;
+}
+
+.contact-heading {
+    padding: 8rem 5rem;
+    margin: -4rem -4.5rem 2rem;
+    background-image: url(../img/services/fine-motor-skills.jpeg);
+    background-color: #4e4e4e;
+    color: #fff;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.in-person {
+    display: flex;
+    justify-content: space-around;
+    align-items: first baseline;
+    width: min-content;
+}
+
+.in-person a {
+    white-space: nowrap;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3DBEA7;
+    padding: 1rem 2rem;
+    max-width: 18rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hours h2 {
+    margin-top: 1rem;
+}
+
+.hours i {
+    margin-right: 0.75rem;
+}
+
+.hours ul {
+    list-style: none;
+    margin-left: -2.5rem;
+    line-height: 2;
+}
+
+.address {
+    display: block;
+    width: 40rem;
+    padding-left: 4rem;
+}
+
+.contact iframe {
+    display: block;
+    margin: 3rem auto;  
+    border: none;  
+}
+
+/* FOOTER begins */
+
+.footer-top {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #FFDC25;
+    width: 100vw;
+    padding: 2rem;
+    text-align: left;
+    bottom: 0;
+    justify-content: space-around;
+} 
+
+.footer-nav, .address {
+    margin: 0 1.5rem;
+}
+
+.footer-nav-list {
+    list-style: none;
+    margin-left: -2.5rem;
+}
+
+.footer-nav-list-item {
+    padding: 0.25rem 0;
+}
+
+footer a {
+    color: #571580;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav-list i {
+    margin-right: 0.5rem;
+    color: #571580;
+}
+
+address {
+    display: flex;
+    line-height: 1.5;
+    color: #000;
+}
+
+.map {
+    margin-top: -2.5rem;
+    margin-left: 4rem;
+}
+
+.footer-end {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    width: 100vw;
+    background-color: #5C108B;
+    text-align: center;
+    line-height: 1.65;
+}
+
+.footer-end p, .footer-end a {
+    color: #fff;
+}

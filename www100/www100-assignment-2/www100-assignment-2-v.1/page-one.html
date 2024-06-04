@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions | Tutorial v.1 </title>
+    <meta name="description" content="A tutorial on CSS Positions by Gowlene Selvavijayan.">
+    <!-- Switch between CSS Stylesheets -->
+    <!-- <link rel="stylesheet" href="css/page-one.css"> --> 
+    <link rel="stylesheet" href="css/page-two.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Intro to CSS Positions</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="version1"><a href="page-one.html">Version One</a></li>
+                <li class="version2"><a href="page-two.html">Version Two</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- .wrapper begins -->
+    <div class="wrapper">
+    <main>
+        <article>
+        <!-- .intro begins -->
+        <div class="intro">
+        <h2>Introduction</h2>
+        <p>The CSS <b>position</b> property specifies how an element is positioned in a web document. Using CSS position, you can choose a method to visually organize web elements, the building blocks of your webpage.</p>
+
+        <p>The <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> properties can help you move positioned elements around either on their own, or in relation to another element.</p>
+
+        <p>Let's learn about the five different ways you can set an element's position and adjust it using offset properties: <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>.</p>
+        </div>
+        <!-- .intro ends -->
+
+        <section class="position-values">
+            <nav class="sidebar">
+                <h3>The 5 positions values</h3>
+            <!-- use for anchor tags -->
+                <ul class="positions">
+                    <li class="position value1"><a href="#static">static</a></li>
+                    <li class="position value2"><a href="#relative">relative</a></li>
+                    <li class="position value3"><a href="#absolute">absolute</a></li>
+                    <li class="position value4"><a href="#fixed">fixed</a></li>
+                    <li class="position value5"><a href="#sticky">sticky</a></li>
+                </ul>
+            </nav>
+
+        <div class="container">
+        <h2>The 5 Positions Values</h2> <!-- display: none for one of the versions-->
+
+        <section class="static">
+        <h3 id="static">position: static;</h3>
+        <p>When the <code>position</code> property is not set, the browser assumes the element is statically positioned by default. Static positioning means the element remains positioned in the order it occurs, or in other words, in the normal flow of a document.</p>
+        </section>
+        <section class="relative">
+            <h3 id="relative">position: relative;</h3>
+            <p>Relative positioning moves the element box <code>relative</code> to its original position in the normal flow of a web page. In relative position, the space the element would have occupied in the normal flow is preserved and appears as visible empty space.</p>
+        </section>
+        <section class="absolute">
+            <h3 id="absolute">position: absolute;</h3>
+            <p>Absolutely positioned elements are removed from the norrmal flow of the document, operating outside it entirely. These elements position themselves with respect to the viewport or their containing element.</p>
+            <p>Unlike relatively positioned elements, the space they would have occupied is closed up without affecting the positioning of surrounding elements.</p>
+            <p>An element in <code>absolute</code> position needs either the top or bottom properties set to appear on the page.</p>
+            <p>When you take an element out of the normal flow of a document using absolute positioning, it looks for a parent or other ancestor element with a position set (to anything other than static) because it needs an element to position itself in relation to. The furthest ancestor element a child element will position itself in relation to is the <code>body</code> element.</p>
+        </section>
+        <section class="fixed">
+            <h3 id="fixed">position: fixed;</h3>
+            <p>What makes <code>fixed</code> positioning unique is that the element stays in one position in the viewport even when the document scrolls.</p>
+            <p>Fixed elements are removed from the document flow and positioned relative to the viewport rather than another element in the document.</p>
+            <p>An element in <code>fixed</code> positioning needs either the <code>top</code> or <code>bottom</code> properties set to appear on the page.</p>
+        </section>
+        <section class="sticky">
+            <h3 id="sticky">position: sticky;</h3>
+            <p>Sticky positioning falls in between relative and fixed in that it behaves as though it is relatively positioned. However, when scrolling, once it lands on its specified position relative to the viewport, the element becomes fixed in position.</p>
+            <p>Similarly to both relative and fixed position, <code>sticky</code> positioning also requires a <code>top</code> or <code>bottom</code> property to function, but the element will remain visible on the page.</p>
+        </section>
+
+        <h4>z-index</h4>
+        <p>Arrange the layout order of elements using <code>z-index</code>. The higher the number set, the higher it will be in the order of elements.</p>
+        <p>For example, to ensuer a fixed or sticky navigation bar coonsistently moves on top of the rest of a web page's content, set the element's <code>z-index</code> to a positive integer. If no other element has its <code>z-index</code> set, <code>z-index: 1;</code> would work.</p>
+        </div>
+        </section>
+        </article>
+    </main>
+    </div>
+    <!-- .wrapper ends -->
+
+
+
+
+    <footer>
+
+        <p>
+            <small>&copy; Copyright Gowlene Selvavijayan 2024</small>
+        </p>
+
+    </footer>
+</body>
+</html>
