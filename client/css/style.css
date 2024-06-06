@@ -1,0 +1,106 @@
+/* Web Fonts */
+/* font-family: 'Tenor Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+/* font-family: 'Forum', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+/* font-family: 'Hind Madurai', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Tenor+Sans&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+h1 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: 700;
+}
+
+h2, .h2, h3, .h3 {
+    font-family: 'Forum', serif;
+}
+
+/* HEADER */
+
+.jumbotron {
+    background-image: url(../img/organic-ingredients-banner.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+    background-color: #f4ede1;
+    background-color: #eae5dc;
+    background-blend-mode: soft-light;
+}
+
+.jumbotron h1 {
+    font-size: 2.5rem;
+}
+
+.client-logo {
+    max-width: 20vw;
+    height: auto;
+}
+
+.seneca-logo {
+    max-width: 30vw;
+    height: auto;
+}
+
+/* PROGRESS BAR */
+
+.progress {
+    background-color: #E0E1CF;
+    border-radius: 10rem;
+    margin-bottom: 2rem;
+}
+
+.progress-bar {
+    background-color: #404939;
+}
+
+/* PROPOSAL section */
+
+.proposal-banner {
+    background-image: url(../img/black-women-beauty-products.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    background-color: #353739;
+    background-blend-mode: multiply;
+    padding: 10rem 5rem;
+    color: #fff;
+}
+
+/* PRODUCTS section */
+
+ol {
+    list-style-type: none;
+    line-height: 1.75;
+}
+
+
+/* MEETING AND OUTCOMES PAGE HEADER */
+
+.meeting-header-client-logo {
+    height: 20vh;
+    width: auto;
+}
+
+.meeting-header-seneca-logo {
+    height: 18vh;
+    width: auto;
+}
+
+.meeting ol {
+    list-style-type: decimal;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #404939;
+    line-height: 1.75;
+}
