@@ -1,0 +1,82 @@
+[
+    {
+        "index" : "1",
+        "name" : "Luz Noceda",
+        "pronouns" : "her",
+        "nicknames" : ["Luz the Human", "Luzura"],
+        "track" : {
+            "coven" : ["Multi-track"],
+            "sigil" : "img/coven/luz-multi-track.png",
+            "description" : "<p>Even after the coven system was dissolved, schools such as Hexside and the University of Wild Magic continue to use the track system, while also allowing students who don't want to specialize in one track choose as many tracks as they desire.</p><p>After the one-track system was dismantled at Hexside, Luz chose to pursue studies in all the tracks. Witches studying in two or more coven tracks wear multiple colors denoting each (or most) of their respective tracks, as seen here with Luz's school uniform.</p>"
+        },
+        "palisman" : {
+            "name": "Stringbean",
+            "bio" : "<p>Stringbean is a shape-shifting palisman, or a snake-shifter. After Luz fails to bond with a palisman like the rest of her Hexside classmates during Palismen Pairing Day, Eda and King break into the Bonesborough Botanical Garden and steal a small log of palistrom wood. After giving it to Luz, she decides to wait to carve her palisman. Luz eventually carves the wood with Eda, shaping it into an egg to let her future palisman choose what it wants to be.</p>",
+            "palImg" : "img/palisman/stringbean.png",
+            "staffImg" : "img/palisman/stringbean-staff.png"
+        },
+        "characterImg" : "img/characters/luz-1.png",
+        "bio" : "<p>Luz Noceda is the protagonist of The Owl House. Our story begins when this kind-hearted, outgoing, eccentric, and exceedingly geeky human, who possesses a strong love of fantasy and adventure, accidentally stumbles upon a portal to the Boiling Isles (located in the Demon Realm.) In order to prove herself as a witch, Luz begins learning magic under Eda the Owl Lady's guidance, despite not having any inherent magical abilities of her own.</p>",
+        "glow" : "yellow"
+    },
+    {
+        "index" : "2",
+        "name" : "Willow Park",
+        "pronouns" : "her",
+        "nicknames" : ["Half-a-Witch Willow", "Leaf Girl"],
+        "track" : {
+            "coven" : "Plant",
+            "sigil" : "img/coven/plant.png",
+            "description" : "<p>The Plant Coven specializes in the various flora on the Boiling Isles. Plant Coven witches can command the flora around them as well as manipulate vines and accelerate plant growth. They can also make flowers bloom and unleash poisonous plants.</p>"
+        },
+        "palisman" : { 
+            "name": "Clover",
+            "bio" : "<p>Abandoned by her original owner, Clover was taken in by the Bat Queen before eventually bonding with Willow during the palisman adoption event at the Hexside School of Magic and Demonics. Clover is paired with Willow after Willow states she wants to be strong and wise to protect her friends.</p>",
+            "palImg" : "img/palisman/clover.png",
+            "staffImg" : "img/palisman/clover-staff.png"
+        },
+        "characterImg" : "img/characters/willow-1.png",
+        "bio" : "<p>Willow is a bubbly and friendly witch. She was originally part of the abomination track but is now on the plant track. Willow is naturally very gifted at plant magic, but since she was forced into the abomination track which she proved far less adept with, many on Hexside assumed she was incompetent, some even calling her 'Half-a-Witch Willow'. This led to years of self-doubt that she made great strides in overcoming. Willow is also passionate about flyer derby, starting and leading a team at Hexside.</p>",
+        "glow" : "green"
+    },
+    {
+        "index" : "3",
+        "name" : "Augustus Porter",
+        "pronouns" : "his",
+        "nicknames" : ["Gus", "Goops"],
+        "track" : {
+            "coven" : "Illusion",
+            "sigil" : "img/coven/illusion.png",
+            "description" : "<p>The Illusion Coven specializes in deception and showmanship to mislead others' senses. Illusionists can create clones and alter their appearances, and powerful illusionists like Gus can even cast somewhat tangible illusions over a large area.</p>"
+        },
+        "palisman" : { 
+            "name": "Emmiline Bailey Marcostimo",
+            "bio" : "<p>Once an abandoned palisman, Emmiline bonded with young, budding illusionist Gus at Hexside's Palisman Adoption Day. She becomes fond of him after hearing his wish to study the Human Realm and re-establish contact with the giraffes.</p>",
+            "palImg" : "img/palisman/emmiline.png",
+            "staffImg" : "img/palisman/emmiline-staff.png"
+        },
+        "characterImg" : "img/characters/gus-1.png",
+        "bio" : "<p>Gus is a young and precocious witch. He is known for being very enthusiastic and excitable; when Luz gives him his nickname, Gus, he flips out in sheer joy. Due to being an illusionist, he tends to have a dramatic flair when making statements and presenting things. </p><p>He has a huge interest in researching human culture, also happening to be somewhat of an expert on it and was the president of the Human Appreciation Society at his school, even though his knowledge on humans is often inaccurate. His fascination for humans and their culture has caused him to desire to become an ambassador to the Human Realm. This also extends to re-establish contact with the exiled inhabitants of the Boiled Isles, such as the giraffes.</p>",
+        "glow" : "blue"
+    },
+    {
+        "index" : "4",
+        "name" : "Amity Blight",
+        "pronouns" : "her",
+        "nicknames" : ["Mittens", "Boots"],
+        "track" : {
+            "coven" : "Abomination",
+            "sigil" : "img/coven/abomination.png",
+            "description" : "<p>The Abomination Coven focuses on the creation and utilization of purple ooze golems known as abominations. Witches in the Abomination Coven can create, summon, and control abominations to do their bidding, and more powerful witches can even use abomination matter to create constructs or even assume an abomination-based form.</p>"
+        },
+        "palisman" : { 
+            "name": "Ghost",
+            "bio" : "<p>When Amity received Ghost, the palisman remained in its wooden form. When Amity said her deepest desire was to be a great witch or an author, Ghost still did not transform. Only when Amity said she was uncertain of her path but wished to decide it for herself did Ghost finally come to life and bond with her.</p>",
+            "palImg" : "img/palisman/ghost.png",
+            "staffImg" : "img/palisman/ghost-staff.png"
+        },
+        "characterImg" : "img/characters/amity-1.png",
+        "bio" : "<p>Amity is a bright, competitive young witch and the top student at the Hexside School of Magic and Demonics. Although initially depicted as an antagonist, after bonding with Luz, Amity begins to change, gaining the footing to stand up to her parents, break free of their expectations, and regain her friendship with Willow. As she grows, so grows her bond with Luz, and the two friends soon become romantic partners.</p>",
+        "glow" : "purple"
+    }
+]

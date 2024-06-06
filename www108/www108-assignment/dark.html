@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" id="top-of-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode vs. Dark Patterns in UX Design</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dark.css">
+</head>
+<body>
+    <header class="text-center p-3 mx-4">
+        <div class="py-3">
+            <h1>Dark Mode vs. Dark Patterns in UX Design</h1>
+        </div>
+    </header>
+    <main class="container">
+        <article class="wrapper p-5 mb-3">
+            <h2 class="pb-3">Dark Mode</h2>
+            <p>I'm a dark mode fanatic. From reducing eye strain to saving battery life with less energy consumption devices with OLED screens to minimizing visual noise and creating a more focused, aesthetic feel, the rising popularity of dark mode over the past decade is a no-brainer.</p>
+            <figure>
+                <img src="img/dark-mode/interface.jpg" alt="dark mode user interface" class="img-fluid dark-mode-img">
+                <figcaption class="small">Image by <a href="https://www.freepik.com/free-vector/gradient-ui-ux-elements_16921081.htm#from_view=detail_serie">Freepik</a>.</figcaption>
+            </figure>
+            <h3>What I Learned</h3>
+            <p>When exploring articles on dark mode in UX design, I learnt a lot about its accessibility concerns, benefits and best practices, including a few things I had not thought about.</p>
+            <p>Here are some of the other takeaways that stuck with me:</p>
+                <h4>Benefits</h4>
+                <ul>
+                    <li>
+                        <h5>Creating a Visual Hierarchy</h5>
+                        <p>The background colour and surface colours of a dark theme can help guide users through a clean, cohesive visual hierarchy when planned and executed with intention. Paying attention to various layers of an interface, its foreground and background and creating elevation for a seamless user experience is, in my opinion, key to mastering dark mode design.</p>
+                    </li>
+                    <li>
+                        <h5>Branding Dark Mode</h5>
+                        <p>Instead of grounding dark themes on a black or grey background, thinking about how to leverage use a darker shade of another colour to put out a unique brand identity or aesthetic can make dark mode design leave a lasting impression.</p>
+                    </li>
+                </ul>
+                <h4>Best Practices</h4>
+                <ul>
+                    <li>
+                        <h5>Adjusting Images</h5>
+                        <p>Saturated images can cause uncomfortable contrasts against the dim lighting of dark themes. Desaturating images or decreasing the brightness and contrast of images, can help create a smoother, more comfortable user experience and reduce eye strain.</p>
+                    </li>
+                    <li>
+                        <h5>Background and Foreground Contrast</h5>
+                        <p>Avoid using pure black for background or pure white for foreground elements. The high contrast can create a jarring visual experience for users, cause eye strain and impede readability. Many of the articles I came across recommended the use of softer shades of black or dark grey for backgrounds and dimmer whites or light greys for text to create a more balanced contrast while keeping accessibility in mind. They also pointed out the importance of paying attention to font weights as there is but a fine line between being too bold or too light and affecting readability in dark mode.</p>
+                    </li>
+                </ul>
+            <h3>How I Applied It</h3>
+            <p>Although I did not add a switch for users to toggle between light mode and dark mode in my design for this assignment, after doing research, I'm of the opinion that it is best to include a toggle switch AND use <code>prefers-color-scheme</code> media queries to set defaults based on the user's device settings. This way the user gets more control over their experience and can toggle between the two options with ease, while also having the design respond to their default preferences.</p>
+            <p>In my dark mode design, I paid close attention to uncomfortable contrasts. I used the CSS <code>filter()</code> function to decrease brightness, contrast and saturation across images. I made sure to not use pure white or black as much as possible, especially not in prominent elements, and worked to create a balanced, comfortable visual experience for the user.</p>
+            <p>I also wanted to create a unique aesthetic feel that reflected the colour palette of the TV Series I was exploring. So I decided to root my dark theme in a dark indigo background instead of a dark grey. As per some of the recommendations I came across when researching, all other background and foreground elements were typically shades of each other to create cohesiveness. I also used purple accents to tie it all together.</p>
+        </article>
+        <article class="wrapper p-5 my-3">
+            <h2 class="pb-3">Dark Patterns</h2>
+            <p>Dark patterns, or deceptive patterns, refers to design that exploits the way users intuitively use and interact with websites and apps to trick, manipulate or heavily influence users to make certain choices or perform actions they otherwise would not. From making users feel ashamed or confused, dark patterns in design persuade and push users to act in ways that go against their intentions or best interests. Widely used from e-commerce retailers and travel services to social media companies, numerous websites and apps use dark patterns to coerce or deceive users into giving away their data, money, or time, usually to benefit the company employing the pattern.</p>
+            <p>Users that feel deceived, manipulated, or misled often feel regretful, foolish, frustrated or dissatisfied. This can even lead to a complete lack of trust in the people, business or organization behind the design.</p>
+            <p>Some examples of dark patterns include sneaking in hidden costs or extra items at checkout, forced continuity by automatically charging after a free trial for a subscription service ends, using design elements to confuse or distract the user from achieving what they set out to do, or shaming and making users feel bad about saying no to sharing their data or subscribing to emails.</p>
+            <p>Dark patterns are all around us and have become so prevalent that many have even been adopted as profitable design conventions, like in the examples below:</p>
+                <h3>Misdirection</h3>
+                <p>This dark pattern uses design to distract the user and move their attention away from what they set out to do. For example, if you are an Amazon Prime members and want to cancel your account, you’re taken to a page that overcomplicates the membership cancellation process, possibly causing enough confusion and inconvenience to make users give up and keep paying for the service unwillingly.</p>
+                <figure>
+                    <img src="img/dark-mode/amazon-misdirection.png" alt="Amazon Prime membership cancellation page" class="img-fluid">
+                    <figcaption class="small">Misdirection when cancelling an Amazon Prime membership. Screenshot by <a href="https://www.cnet.com/tech/services-and-software/how-to-cancel-your-amazon-prime-subscription-and-close-your-account/" target="_blank">Jason Cipriani for CNET</a>.</figcaption>
+                </figure>
+                <h3>Confirm-Shaming</h3>
+                <p>This dark pattern rooted in making users feel guilty or foolish has become a popular marketing tactic in recent years. Its intention is to get the user to opt into doing something like sharing their email and signing up for a newsletter, or prevent them from opting out of something (like unsubscribing from emails) by shaming the user from making the alternative choice.</p>
+                <p>In the example from Loft below, the alternative to sharing an email is to select "No thanks, I prefer to pay full price".</p>
+                <figure>
+                    <img src="img/dark-mode/confirm-shaming-1.png" alt="email subscription discount pop-up modal" class="img-fluid">
+                    <figcaption class="small">Loft shaming users into subscribing to emails. Courtesy of <a href="https://uxbooth.com/articles/ux-dark-patterns-manipulinks-and-confirmshaming/" target="_blank">UX Booth</a>.</figcaption>
+                </figure>
+                <p>In the following example from Turbo, when attempting to unsubscribe from their emails, the user is made to feel guilty for "abandoning" the service.</p>
+                <figure>
+                    <img src="img/dark-mode/confirm-shaming-2.png" alt="email subscription discount pop-up modal" class="img-fluid">
+                    <figcaption class="small">Turbo using pop-culture humour to shame users out of unsubscribing from receiving their emails. Courtesy of <a href="https://uxbooth.com/articles/ux-dark-patterns-manipulinks-and-confirmshaming/" target="_blank">UX Booth</a>.</figcaption>
+                </figure>
+        </article>
+        <article class="wrapper citations p-5 mb-3">
+            <h2 class="py-3">Citations</h2>
+            <h3 class="h4">Dark Mode</h3>
+            <ul>
+                <li>Adhuham. <cite><a href="https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/" target="_blank">"A Complete Guide to Dark Mode on the Web"</a>. CSS-Tricks.</cite> Last modified on October 24, 2021.</li>
+                <li>Design Studio. <cite><a href="https://www.designstudiouiux.com/blog/dark-mode-ui-design-best-practices/" target="_blank">"10 Dark Mode UI Best Practices & Principles"</a>. Design Studio.</cite> Last modified on February 16, 2024.</li>
+                <li>Matthaios Mantzios. <cite><a href="https://www.fastcompany.com/90961802/dark-mode-vs-light-mode-ux-debate-settled" target="_blank">"Dark Mode vs. Light Mode: The UX debate settled"</a>. Last modified on April 10, 2023.</cite></li>
+            </ul>
+            <h3 class="h4">Dark Patterns</h3>
+            <ul>
+                <li>Jaye Hannah. <cite><a href="https://www.uxdesigninstitute.com/blog/what-are-dark-patterns-in-ux/" target="_blank">"What are dark patterns in UX?"</a>. UX Design Institute.</cite> Last modified on December 26, 2022.</li>
+                <li>Erin Schroeder. <cite><a href="https://uxbooth.com/articles/ux-dark-patterns-manipulinks-and-confirmshaming/" target="_blank">"UX Dark Patterns: Manipulinks and Confirmshaming"</a>. UX Booth.</cite> Last modified on June 4, 2019.</li>
+                <li>Sara Morrison. <cite><a href="https://www.vox.com/recode/22351108/dark-patterns-ui-web-design-privacy" target="_blank">"Dark patterns, the tricks websites use to make you say yes, explained"</a>. Vox.</cite> Last modified on April 21, 2021.</li>
+            </ul>
+        </article>
+        <div class="cursor-glow"></div> <!-- TURN OFF glow following cursor by commenting this out (was playing around to see if could create this effect) -->
+    </main>
+    <footer class="footer mt-4 text-center d-flex flex-column">
+        <a href="#top-of-page" class="mt-3">Back to Top</a>
+        <a href="index.html" class="mt-2">Go Back to The Owl House</a>
+        <p><small>Copyright &copy; 2024 Gowlene Selvavijayan</small></p>
+    </footer>
+    <!-- Custom JS -->
+    <script src="js/dark.js"></script>
+</body>
+</html>
