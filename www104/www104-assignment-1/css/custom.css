@@ -48,14 +48,15 @@ h1, .h1, h2, .h2 {
     left: 0;
     right: 0;
     background: linear-gradient(to bottom, transparent 0%, black 80%);
-    opacity: 0.3;
+    opacity: 0.8;
     z-index: 1;
 }
 
-/* .shadow {
-    margin: 0 -4rem -0.5rem -4rem;
-    background: #000a;
-} */
+.shadow {
+    box-shadow: none!important;
+/*     margin: 0 -4rem -0.5rem -4rem;
+    background: #000a; */
+}
 
 /* ARTIST SPOTLIGHT */
 
